@@ -22,8 +22,16 @@ export default  function Infobox({info}){
 
     return (
         <div className="Infobox">
-            <h2>Weather Information</h2>
-            <Card sx={{ maxWidth: 345 }}>
+            <h2 className="gtext">Weather Information</h2>
+            <Card sx={{
+    background: "rgba(18, 2, 2, 0.06)",
+    backdropFilter: "blur(35px)",
+    WebkitBackdropFilter: "blur(35px)",
+    borderRadius: "24px",
+    border: "1px solid rgba(255,255,255,0.2)",
+    boxShadow: "0 15px 40px rgba(0,0,0,0.3)",
+    color: "white"
+  }}>
       <CardMedia
         sx={{ height: 140 }}
         image={info.humidity>80? RAIN_URL 

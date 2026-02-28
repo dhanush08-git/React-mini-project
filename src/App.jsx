@@ -1,14 +1,18 @@
-import './App.css'
-import Weatherapp from './Weatherapp';
+import "./App.css";
+import Weatherapp from "./Weatherapp";
+import bgImage from "./assets/wetbg.png";
 
 function App() {
- 
-
   return (
-    <>
-    <Weatherapp/>
-    </>
-  )
+    <div
+      className="appBackground"
+      style={{ backgroundImage: `url(${bgImage})` }}
+    >
+      <div className="appContainer">
+        <Weatherapp />
+      </div>
+    </div>
+  );
 }
 
-export default App
+export default App;
